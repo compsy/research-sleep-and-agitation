@@ -1,0 +1,12 @@
+version: '3.0'
+services:
+  app:
+    image: slaap-agitatie
+    # On docker attach web, you can now do byebug using the next two entries
+    tty: true
+    stdin_open: true
+    build:
+      context: .
+    #volumes:
+      #- .:/app
+      #- /app/tmp
